@@ -23,3 +23,14 @@ int main() {
         cout << "Masukan nim = ";
         cin >> mhs[i].nim;
         cin.ignore(); // Membersihkan newline dari buffer
+
+        cout << "Masukan nama = ";
+        getline(cin, mhs[i].nama);
+
+        cout << "Masukan kota = ";
+        getline(cin, mhs[i].alamat.kota);
+
+        cout << "Masukan provinsi = ";
+        getline(cin, mhs[i].alamat.provinsi);
+        cin.ignore(); // Membersihkan newline dari buffer
+    }
